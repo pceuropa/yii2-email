@@ -1,0 +1,21 @@
+{
+    "name": "pceuropa/yii2-email-autoresponder",
+    "description": "Extension help send email",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"," email"," autoresponder"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafal Marguzeucz",
+            "email": "info@pceuropa.net"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "pceuropa\\emailAutoresponder\\": ""
+        }
+    }
+}
