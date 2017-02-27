@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 Email autoresponder
 ===================
-Extension help send email
+This extension help send emails.
 
 Installation
 ------------
@@ -11,17 +10,39 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist pceuropa/yii2-email-autoresponder "*"
+composer require pceuropa/yii2-email "*"
 ```
 
 or add
 
 ```
-"pceuropa/yii2-email-autoresponder": "*"
+"pceuropa/yii2-email": "*"
 ```
 
 to the require section of your `composer.json` file.
 
+
+Configuration
+-------------
+
+Yii2 config file:
+```json
+'components' => [
+'mailer' => [
+			'class' => 'yii\swiftmailer\Mailer',
+			'viewPath' => '@common/mail',    // basic Yii2: @app/mail
+			'useFileTransport' => false,
+			'transport' => [
+				'class' => 'Swift_SmtpTransport',
+				'host' => 'smtp.gmail.com',
+				'username' => 'info@gmail.com',
+				'password' => 'password',
+				'port' => '587',		 // or 465
+				'encryption' => 'tls',   // or ssl
+			]
+    ],
+]
+```
 
 Usage
 -----
@@ -29,8 +50,13 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \pceuropa\emailAutoresponder\AutoloadExample::widget(); ?>```
-=======
-# yii2-email-autoresponder
-Extension help send email
->>>>>>> 8ef6c3bc93e1f70f8ad265df4c607f2db25c82f7
+use pceuropa\email\Send;
+
+Send::widget([
+		'from' => 'info@pceuropa.net',
+		'to' => 'info@destiny.pl',
+		'subject' => 'subject email',
+		'textBody' => 'Hello Lorem Ipsum. Bye',
+	]); 
+```
+

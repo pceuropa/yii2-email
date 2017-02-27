@@ -1,22 +1,24 @@
 {
-    "name": "pceuropa/yii2-email-autoresponder",
-    "description": "Extension help send email",
+    "name": "pceuropa/yii2-email",
+    "description": "Widget help send email. Have validate input email.",
     "type": "yii2-extension",
     "keywords": ["yii2","extension"," email"," autoresponder"],
     "license": "MIT",
+    "version": "1.0.1",
 	"minimum-stability": "dev",
 	"authors": [
         {
-            "name": "Rafal Marguzeucz",
+            "name": "Rafal Marguzewicz",
             "email": "info@pceuropa.net"
         }
     ],
     "require": {
-        "yiisoft/yii2": "~2.0.0"
+        "yiisoft/yii2": "~2.0.0",
+        "yiisoft/yii2-swiftmailer": "^2.0@dev",
     },
     "autoload": {
         "psr-4": {
-            "pceuropa\\emailAutoresponder\\": ""
+            "pceuropa\\email\": ""
         }
     }
 }
