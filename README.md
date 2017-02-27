@@ -26,7 +26,7 @@ Configuration
 -------------
 
 Yii2 config file:
-```json
+```
 'components' => [
 'mailer' => [
 			'class' => 'yii\swiftmailer\Mailer',
