@@ -1,6 +1,6 @@
 Email autoresponder
 ===================
-This extension help send emails.
+This extension help send emails. In this version (1.0.1) only text messsage.
 
 Installation
 ------------
