@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Email autoresponder
 ===================
 Extension help send email
@@ -29,3 +30,7 @@ Once the extension is installed, simply use it in your code by  :
 
 ```php
 <?= \pceuropa\emailAutoresponder\AutoloadExample::widget(); ?>```
+=======
+# yii2-email-autoresponder
+Extension help send email
+>>>>>>> 8ef6c3bc93e1f70f8ad265df4c607f2db25c82f7
