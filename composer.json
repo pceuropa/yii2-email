@@ -4,7 +4,9 @@
     "type": "yii2-extension",
     "keywords": ["yii2","extension"," email"," autoresponder"],
     "license": "MIT",
-    "authors": [
+    "version": "1.0.0",
+	"minimum-stability": "dev",
+	"authors": [
         {
             "name": "Rafal Marguzeucz",
             "email": "info@pceuropa.net"
