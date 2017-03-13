@@ -4,7 +4,6 @@
     "type": "yii2-extension",
     "keywords": ["yii2","extension"," email"," autoresponder"],
     "license": "MIT",
-    "version": "1.2.0",
 	"authors": [
         {
             "name": "Rafal Marguzewicz",
@@ -12,7 +11,6 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0"
     },
     "autoload": {
